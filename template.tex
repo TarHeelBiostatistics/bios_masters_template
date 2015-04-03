@@ -1,0 +1,143 @@
+\documentclass{biosmasters}
+
+\author{My Name}
+\title{MY TITLE}
+\date{Month XX, YYYY}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\begin{document}
+
+
+%-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TITLE PAGE
+% Title page based on: 
+% University Assignment Title Page 
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+%%
+\newgeometry{top=2in,left=1in, right=1in, bottom=1in}
+%%
+
+\begin{center} % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\thetitle \\[1cm] % Title of your document
+
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+by\\[1cm]
+
+\theauthor \\[1cm]
+
+\begin{minipage}{0.8\textwidth}
+\begin{center}
+A paper submitted to the faculty \\
+of the University of North Carolina \\
+in partial fulfillment of the requirements \\
+for the degree of Master of Science \\
+in the Department of Biostatistics
+\end{center}
+\end{minipage}\\[1cm]
+
+Chapel Hill \\[1cm]
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+\thedate\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	APPROVAL SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft}\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft}
+Approved by:\\[1cm]
+
+\SignatureAndDate{Advisor}
+\vspace{.15in}
+\SignatureAndDate{Reader}
+
+\end{flushleft}
+\end{minipage}\\[1cm]
+
+\end{center}
+
+\begin{minipage}{0.9\textwidth}
+\begin{flushleft}
+Oral Presentation on:  \hspace{.5in} \thedate \\[.5cm]
+\hspace{.3in}\SignatureAndDate{\hspace{.1in}Chair of Seminar Committee}
+\end{flushleft}
+\end{minipage}\\
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+%-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	TOC 
+%----------------------------------------------------------------------------------------
+
+\pagenumbering{roman}
+
+\tableofcontents % Comment out of unnecessary
+\newpage
+
+%-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	MAIN CONTENT 
+%----------------------------------------------------------------------------------------
+
+\pagenumbering{arabic}
+
+%%
+\newgeometry{top=2in,left=1.5in, right=1in, bottom=1in}
+\doublespacing
+%%
+
+\thispagestyle{firstpage}
+
+\begin{center}
+\thetitle \\[1cm]
+by \\[1cm]
+\theauthor \\
+\end{center}
+\vspace{1.1cm}
+%% PASTE FIRST PAGE CONTENT BELOW %%
+
+The start of my great paper.
+
+%%
+\restoregeometry
+\doublespacing
+%%
+%% PASTE REMAINING CONTENT BELOW %%
+
+The rest of my great paper.
+
+\bibliography{mybibtex} %Enter bibtex file name
+
+\end{document}
+
