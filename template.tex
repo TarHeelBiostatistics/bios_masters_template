@@ -12,6 +12,14 @@
 
 \begin{document}
 
+% Patch page back references in references list to be in this form [page1, page2, etc.]
+% Thanks to Scott VB for the suggestion.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\patchcmd{\BR@backref}{\newblock}{\newblock[}{}{}
+\patchcmd{\BR@backref}{\par}{]\par}{}{}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TITLE PAGE

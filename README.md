@@ -1,5 +1,5 @@
 # Latex Template for UNC Biostatistics Master's Papers
-This template provides a rough outline of the formatting standards for master's papers in the UNC Department of Biostatistics. This template is based on the standards in the [2013-2014 Academic Informaiton Manual](http://sph.unc.edu/files/2013/12/BIOS_AIM_2013_14.pdf).
+This template provides a rough outline of the formatting standards for master's papers in the UNC Department of Biostatistics. This template is based on the standards in the [2013-2014 Academic Information Manual](http://sph.unc.edu/files/2013/12/BIOS_AIM_2013_14.pdf).
 
 ## Instructions
 * Save the template.tex and biosmasters.cls to your computer. Rename template.tex to whateveryouwant.tex.

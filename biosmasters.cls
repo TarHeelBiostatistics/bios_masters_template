@@ -4,6 +4,7 @@
 
 \ProvidesClass{biosmasters}
 \LoadClass{article}
+\PassOptionsToPackage{pagebackref=true}{hyperref}
 
 %% PACKAGES %%
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} % default for most pages
