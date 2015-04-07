@@ -12,6 +12,7 @@
 \usepackage{amsmath}
 \usepackage{fancyvrb}
 \usepackage{natbib}
+\usepackage{etoolbox} % Enable various patching tools
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{setspace} % For double spacing
